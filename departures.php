@@ -1,5 +1,6 @@
 <?php
 $target = 'http://www.schiphol.nl/123tmav321/departures_today_passenger.txt';
+$target = 'http://www.schiphol.nl/nosj2va/departures_today_passenger.txt?_=' . time();
 
 curlGet($target);
 
