@@ -58,8 +58,8 @@
 						if (row && row.length > 0) {
 							$('td.status', row).html(flight.status);						
 						} else {
-							var class = ($('#departures > tbody:last tr:last').hasClass('even')) ? 'odd' : 'even';
-							var str = '<tr id="flight' + i + '" class="' + class + '">';
+							var rowClass = ($('#departures > tbody:last tr:last').hasClass('even')) ? 'odd' : 'even';
+							var str = '<tr id="flight' + i + '" class="' + rowClass + '">';
 	
 							str += createCell('scheduled', flight.scheduled);
 							str += createCell('airport', flight.airport);
